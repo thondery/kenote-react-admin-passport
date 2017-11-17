@@ -32,7 +32,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest --u --colors --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
-    "codecov": "jest --u --colors --coverage && codecov"
+    "codecov": "jest --u --colors --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill --coverage && codecov"
   },
   "jest": {
     "moduleFileExtensions": [
