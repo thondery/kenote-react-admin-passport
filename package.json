@@ -1,9 +1,9 @@
 {
-  "name": "kenote-react-component",
+  "name": "kenote-react-admin-passport",
   "version": "1.0.0",
-  "description": "react component for kenote",
+  "description": "Admin Passport for React",
   "main": "lib/index.js",
-  "repository": "https://github.com/thondery/kenote-react-component.git",
+  "repository": "https://github.com/thondery/kenote-react-admin-passport.git",
   "author": "thondery <thondery@163.com>",
   "license": "MIT",
   "devDependencies": {
