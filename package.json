@@ -1,6 +1,6 @@
 {
   "name": "kenote-react-admin-passport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Admin Passport for React",
   "main": "lib/index.js",
   "repository": "https://github.com/thondery/kenote-react-admin-passport.git",
