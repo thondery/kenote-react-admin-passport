@@ -7,8 +7,10 @@
   "author": "thondery <thondery@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "antd": "^3.0.0-beta.7",
     "babel-core": "^6.26.0",
     "babel-jest": "^21.2.0",
+    "babel-plugin-import": "^1.6.2",
     "babel-plugin-lodash": "^3.2.11",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
@@ -17,15 +19,19 @@
     "babel-preset-stage-0": "^6.24.1",
     "codecov": "^3.0.0",
     "jest": "^21.2.1",
+    "rc-queue-anim": "^1.4.0",
     "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-test-renderer": "^16.0.0"
   },
   "peerDependencies": {
-    "react": ">=15.6.0"
+    "antd": ">=2.0.0",
+    "rc-queue-anim": "*",
+    "react": ">=15.5.0"
   },
   "scripts": {
     "build": "babel src -d lib",
-    "test": "jest --u --colors",
+    "test": "jest --u --colors --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "codecov": "jest --u --colors --coverage && codecov"
   },
   "jest": {

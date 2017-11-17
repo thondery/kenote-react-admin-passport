@@ -1,17 +1,13 @@
 
 import React from 'react'
 import renderer from 'react-test-renderer'
-import KenoteLayout from '../src'
+import { Screen } from '../lib'
 
-test('component => KenoteLayout', () => {
+test('component => Screen', () => {
   const component = renderer.create(
-    <KenoteLayout name="test" >
+    <Screen >
      React test
-    </KenoteLayout>
+    </Screen>
   )
   expect(component).toMatchSnapshot()
-  expect(component.toJSON().type).toEqual('div')
-  expect(component.toJSON().children[0].type).toEqual('p')
-  expect(component.toJSON().children[0].children).toEqual(['name: ', 'test'])
-  expect(component.toJSON().children[1]).toEqual('React test')
 })

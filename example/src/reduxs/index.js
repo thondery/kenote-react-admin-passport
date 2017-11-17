@@ -1,0 +1,1 @@
+export { Reducer as passportReducer } from './passport'
