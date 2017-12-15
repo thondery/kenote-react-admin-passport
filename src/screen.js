@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Icon } from 'antd'
 import QueueAnim from 'rc-queue-anim'
-import '../styles/screen.scss'
+import '../styles/screen.css'
 
 export default class Screen extends PureComponent {
   
